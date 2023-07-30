@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Square+Peg&display=swap" rel="stylesheet">
+</head>
+<body>
+        <main class="mainContent">
+            <div id="particles-js">
+
+            </div>
+            <div class="title-container">
+                <div class="container">
+                    <div class="input">
+                        <input class="cityInput" type="text" placeholder="enter a city name">
+                        <button class="inputButton" title="button" onclick="searchWeather()" type="submit">
+                            <img src="img/lupa.avif" alt="">
+                        </button>
+                    </div>
+                    <div class="displayer">
+                        <div class="metricsSelector">
+                            <label for="metricSelect">Choose your prefered unit</label>
+                            <select name="" class="metricSe" id="metricSelect">
+                                <option value="metric">°C | km/h</option>
+                                <option value="imperial">°F | mp/h</option>
+                            </select>
+                        </div>
+                        <div class="principalScreen">
+                            <div>
+                                <div class="weather"></div>
+                            </div>
+                            <div>
+                                <div class="temp"><p>--</p></div>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <div>
+                                <h3>Humidity</h3>
+                                <div class="humidity"><p>--</p></div>
+                            </div>
+                            <div>
+                                <h3>Wind Speed</h3>
+                                <div class="wind"><p>--</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    <script src="js/particles.js"></script>
+    <script src="js/configParti.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

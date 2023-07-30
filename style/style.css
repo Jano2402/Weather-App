@@ -1,0 +1,161 @@
+html, body {
+    background-color: rgb(0, 0, 0);
+    height: 99vh;
+    font-family: 'Rubik', sans-serif;
+}
+h3,p {
+    color: white;
+}
+#particles-js {
+    width: 100%;
+    height: 99vh;
+}
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mainContent {
+    position: relative;
+}
+.metricsSelector {
+    display: flex;
+    margin-top: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+.metricsSelector label {
+    font-size: 20px;
+    color: white;
+}
+.metricsSelector select {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: (160, 0, 177);
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: black;
+}
+.metricSe {
+    margin-left: 20px;
+}
+.input {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.cityInput {
+    border-radius: 20px;
+    padding: 15px;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+}
+.inputButton {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    left: 310px;
+    bottom: 10px;
+}
+.inputButton img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.data {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    place-items: center;
+}
+.data div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.data div h3 {
+    margin-bottom: 0px;
+    font-size: 25px;
+}
+.data div div p {
+    font-size: 20px;
+    font-weight: 500;
+}
+.principalScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.principalScreen img {
+    width: 170px;
+    height: 170px;
+}
+.principalScreen div p {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+}
+.container {
+    background: rgb(243,128,255);
+    background: linear-gradient(45deg, rgba(243,128,255,1) 0%, rgba(255,20,246,1) 40%, rgba(255,132,240,1) 100%);
+    padding: 40px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.61);
+    position: absolute;
+    top: 30px;
+    max-width: 453px;
+    width: 95%;
+    margin: 0 auto;
+}
+.displayer {
+    display: none;
+    transition: all .3s;
+}
+@media (max-width: 550px) {
+    .container {
+        padding: 20px;
+        .inputButton {
+            border: none;
+            background-color: transparent;
+            position: absolute;
+            left: 250px;
+            bottom: 10px;
+        }
+    }
+}
+@media (max-width: 340px) {
+    .container {
+        padding: 20px;
+        .inputButton {
+            border: none;
+            background-color: transparent;
+            position: absolute;
+            left: 220px;
+            bottom: 10px;
+        }
+    }
+}
+@media (max-width: 303px) {
+    .container {
+        padding: 20px;
+        .inputButton {
+            border: none;
+            background-color: transparent;
+            position: absolute;
+            left: 200px;
+            bottom: 10px;
+        }
+        .data div h3 {
+            margin-bottom: 0px;
+            font-size: 20px;
+        }
+        .data div div p {
+            font-size: 15px;
+            font-weight: 500;
+        }
+    }
+}
